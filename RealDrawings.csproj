@@ -34,14 +34,14 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Eto, Version=2.5.0.0, Culture=neutral, PublicKeyToken=552281e97c755530, processorArchitecture=MSIL">
-      <HintPath>packages\RhinoCommon.6.13.19058.371\lib\net45\Eto.dll</HintPath>
+    <Reference Include="Eto">
+      <HintPath>C:\Program Files\Rhino 6\System\Eto.dll</HintPath>
     </Reference>
-    <Reference Include="Rhino.UI, Version=6.13.19058.370, Culture=neutral, PublicKeyToken=552281e97c755530, processorArchitecture=MSIL">
-      <HintPath>packages\RhinoCommon.6.13.19058.371\lib\net45\Rhino.UI.dll</HintPath>
+    <Reference Include="Rhino.UI">
+      <HintPath>C:\Program Files\Rhino 6\System\Rhino.UI.dll</HintPath>
     </Reference>
-    <Reference Include="RhinoCommon, Version=6.13.19058.370, Culture=neutral, PublicKeyToken=552281e97c755530, processorArchitecture=MSIL">
-      <HintPath>packages\RhinoCommon.6.13.19058.371\lib\net45\RhinoCommon.dll</HintPath>
+    <Reference Include="RhinoCommon">
+      <HintPath>C:\Program Files\Rhino 6\System\RhinoCommon.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -104,6 +104,12 @@
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\Up.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="RealDrawings.csproj">
+      <Project>{9AAA3B93-9EA4-4425-B44E-8A8C4500C274}</Project>
+      <Name>RealDrawings</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
